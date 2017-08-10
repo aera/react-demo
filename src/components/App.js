@@ -5,18 +5,23 @@ import Rect from './Rect';
 import Greetings from './Greetings';
 import ShadesOfGrey from './ShadesOfGrey';
 import Fa from './Fa';
-import Chessboard from './Chessboard'
+import Chessboard from './Chessboard';
+import GuestBook from './GuestBook';
+import Timer from './Timer';
 
 function App (props) {
   const style = {
     display: 'flex',
     alignItems: 'center',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    marginTop: '10vh'
   };
 
   return (
     <div className='App' style={style}>
-
+      <Timer />
+      <GuestBook />
+      <hr />
       <Chessboard cols={8} rows={8} isBordered={true} />
       <hr />
       <Chessboard cols={6} rows={2} oddColor='orange' isBordered={false} />
@@ -38,6 +43,7 @@ function App (props) {
       <Shape bgColor='Red' />
       <Shape bgColor='Green' type='circle' />
       <Rect />
+      <Shape colors={['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet']} />
       <Greetings names = {['Jo', 'Dave', 'Lana', 'Dana', 'Tom']} />
       <ShadesOfGrey levels={9} />
       <ShadesOfGrey />
