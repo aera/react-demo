@@ -28,8 +28,12 @@ function App (props) {
       <Fa kind='spinner' spin={true} size="3x" />
       <Hello name='Jon' bgColor='LightCyan' />
       <Hello name='Daenerys' fontFamily='Papyrus' />
-      <Hello name='Cersei' isBye={true} />
-      <Hello name='Euron' isBye />
+      <Hello name='Cersei' />
+      <Hello name='Euron' />
+      <Hello name='Tyrion' />
+      <Hello name='Ser FriendZone' />
+      <Hello name='Varys' />
+      <Hello name='Grey Worm' />
       <Shape />
       <Shape bgColor='Red' />
       <Shape bgColor='Green' type='circle' />
