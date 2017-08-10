@@ -8,6 +8,9 @@ import Fa from './Fa';
 import Chessboard from './Chessboard';
 import GuestBook from './GuestBook';
 import Timer from './Timer';
+import StopWatch from './StopWatch';
+import ShapeMover from './ShapeMover';
+import ShapeMaker from './ShapeMaker';
 
 function App (props) {
   const style = {
@@ -19,7 +22,11 @@ function App (props) {
 
   return (
     <div className='App' style={style}>
+      <ShapeMover />
+      <ShapeMaker />
+      <hr />
       <Timer />
+      <StopWatch />
       <GuestBook />
       <hr />
       <Chessboard cols={8} rows={8} isBordered={true} />
